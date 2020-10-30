@@ -6,7 +6,7 @@ app.use(methodOverride('_method'));
 app.use(express.static("public"));
 app.use(express.urlencoded({extended:true}));
 
-app.use("/pokemon", require("./controllers/pokemonController.js")); //homepage, add new, delete, edit
+app.use("/", require("./controllers/pokemonController.js")); //homepage, add new, delete, edit
 app.use("/players", require("./controllers/playerController.js"));
 
 //LISTEN
