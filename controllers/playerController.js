@@ -4,7 +4,7 @@ const router = express.Router();
 const Player = require('../models').Player;
 const Team = require('../models').Team;
 const Pokemon = require('../models').Pokemon;
-
+console.log('Testing')
 //GET index
 router.get('/',(req,res)=>{
     res.render('players/index.ejs')
