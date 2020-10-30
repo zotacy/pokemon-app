@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <title>New Pokémon</title>
+</head>
+    <body>
+        <div class='pokedex'>
+            <h1 class='pdex'> New Pokédex Entry</h1>
+            <form action="/pokemon" method="POST" id="newEntryScreen">
+                Player ID: <input type="text" name="playerId"/><br/>
+                Pokémon: <input type="text" name="name" /><br/>
+                Img: <input type="text" name="img"/><br/>
+                <p class="notes"> *Img format: http://img.pokemondb.net/artwork/NEW-POKEMON.jpg</p>
+                <input type="submit" name="" value="Add to Pokédex"/>
+            </form>
+        </div>
+    </body>
+</html>

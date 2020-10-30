@@ -1,0 +1,116 @@
+
+body{
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+}
+
+header{
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+}
+
+nav{
+  text-align:center;
+  margin: 0 auto;
+}
+
+a{
+  margin: 10px;
+}
+#pokeball{
+  margin:0 auto;
+  border: 5px solid black;
+  border-radius: 50%;
+  width: 600px;
+  height:600px;
+  overflow:hidden;
+  box-sizing:border-box;
+}
+.top{
+  margin: 0 auto;
+  background: rgba(255,0,0,0.8);
+  width:100%;
+  height:50%;
+  padding-top: 1px;
+}
+.bottom{
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0);
+  height:50%;
+}
+.centerline{
+  background-color: black;
+  height:25px;
+  margin:-10px auto;
+  position:relative;
+}
+#outercircle{
+  position:absolute;
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  background-color: rgba(240,240,240,1);
+  border: 2px solid black;
+  border-radius: 50%;
+  height:140px;
+  width:140px;
+  box-shadow: 0 0 0 25px black;
+
+  margin: -58px 225px;
+}
+#innercircle{
+  display:inline-block;
+  text-align:center;
+  top: 50%;
+  left: 50%;
+  background-color:rgba(245,245,245 ,1);
+  border: 2px solid black;
+  border-radius:50%;
+  height:100px;
+  width:100px;
+  margin: 18px
+}
+#innercircleContent{
+  margin-top: 30px;
+  font-size: 13px;
+  line-height: 20px;
+}
+form{
+  color: white;
+  font-weight: bold;
+}
+#userForm{
+  padding-top:25px;
+}
+
+#editBtn{
+  margin: 10px 0px 0px 0px;
+  padding: 0;
+}
+
+#deleteBtn{
+  margin: 0 auto;
+  padding:0;
+}
+#bottomContent{
+  margin-top: 110px;
+}
+h2{
+  margin: 5px auto;
+}
+
+/* Trainer Login */
+#trainerLogin{
+  margin-top: 55px;
+  padding-bottom: 15px;
+}
+#welcome{
+  margin-top: 100px;
+}
+#trainerLinks{
+  width: 200px;
+  font-size: 20px;
+  margin: 10px auto;
+}

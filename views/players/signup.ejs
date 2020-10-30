@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/player.css">
+    <title>New Trainer</title>
+</head>
+    <body>
+        <header>
+            <h1>Welcome New Trainer</h1>
+        </header>
+        
+        <div class='top'>
+            <form action="/players" method="POST">
+                Name: <input type="text" name="name" /><br/>
+                Username: <input type="text" name="username" /><br/>
+                Password: <input type="text" name="password" /><br/>
+                Starter (Gen1): <input type="text" name="companion" /><br/>
+                <input type="submit" name="" value="Create Profile"/>
+            </form>
+        </div>
+
+        <div class='center'>
+            <button id='activate'></button>
+        </div>
+    
+        <div class='bottom'>
+            <h1>Time to start you pokemon Adventure!</h1>
+        </div>
+    </body>
+</html>

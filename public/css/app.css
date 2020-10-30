@@ -1,0 +1,107 @@
+html{
+  background:white;
+}
+h1 {
+  font-size: 60px;
+  color: yellow;
+  /* text-shadow: -1px 0 blue, 0 1px blue, 1px 0 blue, 0 -1px blue; */
+  -webkit-text-stroke: blue;
+  -webkit-text-stroke-width: 2px;
+  margin: 0 auto;
+}
+h2{
+  margin: 2px auto;
+}
+h3{
+  font-family: Impact, Charcoal, sans-serif;
+  color: blue;
+  -webkit-text-stroke: yellow;
+  -webkit-text-stroke-width: .75px;
+  font-size: 30px;
+  margin: 5px 0px 25px 0px;
+}
+form{
+  margin: 3px 0px;
+}
+input{
+  margin: 1px 0px;
+}
+.notes{
+  font-size: 12px;
+  margin: 2px 0px 10px 0px;
+}
+/* .top{
+  background: rgba(255,0,0,0.8);
+}
+.bottom{
+  background-color: rgba(0,0,0,1);
+} */
+
+/* Pokedex Styling */
+.pokedex{
+  background:red;
+  border:5px solid black;
+  border-radius:50px;
+  overflow:hidden;
+  padding:20px;
+  margin:0px 10px 0px 10px;
+  height: 90%
+}
+header.pdex{
+  background-color:red;
+  margin:0;
+  padding-bottom: 10px;
+}
+nav{
+  background-color:palegoldenrod;
+  border: 2px solid blue;
+  border-radius:15%;
+  width: 150px;
+  padding:5px;
+  padding-left:10px;
+}
+/* Intertior "Screen" */
+#pokedexScreen{
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius:25px;
+  box-sizing:border-box;
+}
+#newEntryScreen{
+  background-color: lightblue;
+  border: 2px solid black;
+  border-radius:25px;
+  box-sizing:border-box;
+  padding:8px;
+  padding-left:12px;
+}
+ul{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(195px, 1fr));
+}
+li{
+  align-items:center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+img{
+  width:70%;
+  height:auto;
+}
+
+#pdexBtn{
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  border-radius: 50%;
+  height:100%;
+  width:100%;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+/* a:active{
+  box-shadow: inset 10px 10px 100px #696969;
+  -moz-box-shadow: inset 0 0 10px #696969;
+  -webkit-box-shadow: inset 0 0 10px #696969;
+} */

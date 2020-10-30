@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/player.css">
+    <title>Trainer Login</title>
+</head>
+<body>
+    <main id="pokeball">
+        <div class ='top'>
+            <div id='trainerLogin'>
+                <h1>Trainer Login</h1>
+                <form action="/players/login" method="POST">
+                    Username: <input type="text" name="username" /><br/>
+                    Password: <input type="text" name="password" /><br/>
+                    <input type="submit" name="" value="Login" id='loginBtn'/>
+                </form>
+            </div>
+        </div>
+
+        <div class='centerline'>
+            <div id='outercircle'>
+                <div id="innercircle">
+                    <div id='innercircleContent'>
+                        <!-- <a href="/pokemon">Pokédex App</a><br/>
+                        <a href="/pokemon/new">New Entry</a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class='bottom'>
+            <h1 id='welcome'>Welcome Trainer</h1>
+        </div>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/player.css">
+    <title>Trainer Profile</title>
+</head>
+
+<body>
+    <header id="Trainer">
+        <h1>Welcome Trainer <%=player.username%></h1>
+        <h3><%= player.Team.name %></h3>
+    </header>
+    
+    <main id="pokeball">
+    <div class='top'>
+        <!-- Player Information -->
+        <form action="/players/profile/<%=player.id%>?_method=PUT" method="POST" id="userForm">
+            Name: <input type="text" name="name" value="<%=player.name%>" /><br/>
+            Username: <input type="text" name="username" value="<%=player.username%>" /><br/>
+            Password: <input type="text" name="password" value="<%=player.password%>" /><br/>
+            Pokémon Companion: <input type="text" name="companion" value="<%=player.companion%>" /><br/>
+        <!-- Select Team -->
+        <select name="teamId">
+            <% for (let i=0; i<teams.length; i++) { let selected = ( i == 0
+                ) ? "selected" : "";%>
+            <option value="<%=teams[i].id%>" <%= selected %>> <%= teams[i].name %> </option>
+            <% } %>
+        </select>
+        <br/>
+        <!-- Edit Button -->
+        <input type="submit" value="Edit Profile" id="editBtn"/>
+        </form>
+        <!-- ADD DELETE FORM HERE -->
+        <form action="/players/<%=player.id %>?_method=DELETE" method="POST">
+            <input type="submit" value="Delete Profile" id="deleteBtn"/>
+        <br><br>
+    </div>
+        <!-- PokeDex Links-->
+    <div class='centerline'>
+        <div id='outercircle'>
+            <div id="innercircle">
+                <div id='innercircleContent'>
+                    <a href="/pokemon">Pokédex App</a><br/>
+                    <a href="/pokemon/new">New Entry</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class='bottom'>
+        <!-- Player Added Pokemon -->
+        <div id='bottomContent'>
+            <h2>Pokemon added by you:</h2>
+            <% for (let i = 0; i < player.Pokemons.length; i++){ %>
+                <li style="list-style-type:none;">
+                <%=player.Pokemons[i].name%></a>
+                </li>
+            <br />
+            <% } %>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>
